@@ -2,15 +2,20 @@
 \contentsline {section}{\numberline {1}什么是组合数学}{1}{section.1}
 \contentsline {paragraph}{组合数学所关心的问题}{1}{paragraph*.4}
 \contentsline {paragraph}{组合数学}{1}{paragraph*.5}
-\contentsline {paragraph}{数学归纳法}{1}{paragraph*.6}
+\contentsline {paragraph}{数学归纳法}{2}{paragraph*.6}
 \contentsline {paragraph}{组合数学解决问题的一般步骤}{2}{paragraph*.7}
 \contentsline {section}{\numberline {2}排列和组合}{2}{section.2}
 \contentsline {subsection}{\numberline {2.1}四个基本计数原理}{2}{subsection.2.1}
 \contentsline {paragraph}{划分}{2}{paragraph*.8}
 \contentsline {subsubsection}{\numberline {2.1.1}加法原理}{2}{subsubsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.2}乘法原理}{2}{subsubsection.2.1.2}
+\contentsline {subsubsection}{\numberline {2.1.2}乘法原理}{3}{subsubsection.2.1.2}
+\contentsline {paragraph}{乘法原理的第二种实用形式}{3}{paragraph*.9}
+\contentsline {paragraph}{乘法原理的推广}{3}{paragraph*.10}
 \contentsline {section}{\numberline {3}附录A}{3}{section.3}
 \contentsline {subsection}{\numberline {3.1}数学归纳法正确性的证明}{3}{subsection.3.1}
-\contentsline {paragraph}{皮亚诺公理（自然数公理）}{3}{paragraph*.9}
-\contentsline {subsection}{\numberline {3.2}排列与组合}{3}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}结论“乘法原理是加法原理的推论”的证明}{3}{subsubsection.3.2.1}
+\contentsline {paragraph}{皮亚诺公理（自然数公理）}{3}{paragraph*.11}
+\contentsline {subsection}{\numberline {3.2}排列与组合}{4}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}结论“乘法原理是加法原理的推论”的证明}{4}{subsubsection.3.2.1}
+\contentsline {subsection}{\numberline {3.3}其他}{4}{subsection.3.3}
+\contentsline {subsubsection}{\numberline {3.3.1}算术基本定理}{4}{subsubsection.3.3.1}
+\contentsline {paragraph}{算术基本定理}{4}{paragraph*.12}
