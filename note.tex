@@ -1,0 +1,92 @@
+% !TEX program = xelatex
+\documentclass{ctexart}
+\usepackage{}
+\usepackage{geometry}
+\geometry{a4paper,scale=0.8}
+
+\usepackage[colorlinks = true]{hyperref}
+
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\title{组合数学 笔记\\Combinatorics Note}
+\author{葛骏 Atlas}
+\date{\today}
+\begin{document}
+    \begin{titlepage}
+        \maketitle
+    \end{titlepage}
+    \tableofcontents
+
+    \part*{前言}
+    \paragraph{本文简介} 本文是葛骏研究学习组合数学的时候整理写出，以备自用。本文参考教材是机器工业出版社（$China \ Machine \  Press$）出版的，由美国威斯康星大学麦迪逊分校（$University \ of \ Wisconsin-Madison$）的理查德·A·布鲁尔迪教授($Richard \ A. \ Brualdi$)所著作，北京师范大学冯速等人翻译的《组合数学（第五版）》（$Introductory \ Combinatorics \ Fifth \ Edition$）。\\
+    由于本文作者本人水平有限，故文中不免有纰漏、错误。（准确的说，会有很多！）而且想到本文是自用的，所以写作之时，常常心不在焉。倘若您读到本文纰漏之处，还望与我联系交流学习更正，谢谢。
+    \section{什么是组合数学}
+    \paragraph{组合数学所关心的问题} 就是把某个集合中的对象排列成某种模式，使其满足一定的规则。
+    组合数学中反复出现两种通用的问题。
+    \begin{itemize}
+        \item 排列的存在性。
+        \item 排列的列举或分类。
+    \end{itemize}
+
+    还有两种常常出现的组合问题
+    
+    \begin{itemize}
+        \item 研究已知的排列。
+        \item 构造最优排列。
+    \end{itemize}
+    \paragraph{组合数学}是研究离散构造的存在、计数、分析和优化等问题的一门学科。\\
+    组合数学验证发现的重要工具是\textbf{数学归纳法}。
+    \paragraph{数学归纳法}\footnote{在本文的教科书中，作者默认读者掌握了数学归纳法，因此我查阅了《数据结构与算法分析——C++语言描述（第四版）》（$Data  \ Structures \ and \ Algorithm \ Analysis \ in \ C++ \ Fourth \ Edition$），「美」马克·艾伦·韦斯（$Mark \ Allen \ Weiss$）著，冯舜玺翻译），以及百度百科和维基百科关于数学归纳法的词条。}是一种数学证明方法。运用数学归纳法（第一数学归纳法）解决问题一般分为三个步骤：
+    \begin{enumerate}
+        \item \textbf{归纳奠基} \ 证明$n=1$时，定理成立。
+        \item \textbf{归纳假设} \ 假设$n = k$时定理成立。
+        \item \textbf{归纳递推} \ 由归纳假设推出$ n = k+1$时定理成立。
+    \end{enumerate}
+    从而可以判断定理成立。\\
+    需要注意的是，虽然“数学归纳法”中有“归纳”二字，但并非数学归纳法是有漏洞的归纳推理法，实际上，数学归纳法是严谨的（附录A中有数学归纳法正确性的证明），数学归纳法属于严谨的\textbf{演绎推理法}。
+    
+    \paragraph{组合数学解决问题的一般步骤}
+    \begin{enumerate}
+        \item 建立数学模型;
+        \item 研究模型;
+        \item 计算若干小案例，树立信心，洞察一切;
+        \item 运用详细的推理和巧思最终找到问题的答案。
+    \end{enumerate}
+
+    \section{排列和组合}
+    \subsection{四个基本计数原理}
+    \paragraph{划分} 设$S$是集合，集合$S$ 的一个\textbf{划分}（$partition$）满足下面条件的$S$的子集$S_1,S_2,\cdots , S_n$的集合。即使得S的每一个元素恰好只属于这些子集中的一个子集：
+    \[S =  S_1 \cup S_2 \cup \cdots \cup S_m \]
+    \[S_i \cup S_j = \varnothing (i \ne j)\]
+    注意：划分可以是空的。集合$S$的\textbf{对象数目}记作$\mid S \mid$
+    \subsubsection{加法原理}
+    设集合$S$被划分成两两不相交的部分$S_1,S_2,\cdots , S_n$。则集合$S$的对象数目可以通过确定它的每一个部分的对象数目并且如此相加而得到：
+    \[\mid S \mid = \mid S_1\mid + \mid S_2\mid + \cdots + \mid S_n\mid \]
+    运用加法原理的技巧是把集合 $S$划分成少量的易处理部分。\\
+    用\textbf{选择的术语}对加法原理的描述如下：\textit{如果有$p$种方法能够从一堆中选出一个物体，又有$q$种方法从另外一堆中选出一个物体，那么从这两堆中选出一个物体有$p+q$种方法}。
+    \subsubsection{乘法原理}
+    令$S$是对象的有序对$(a,b)$的集合，其中第一个对象$a$来自大小为$p$的一个集合，而对于对象$a$的每个选择，对象$b$有$q$种选择。于是，$S$的大小为$p \times q$：
+    \[\mid S \mid = p \times q\]
+    实际上，乘法原理是加法原理的一个推论。（此结论证明详见附录A）
+    \section{附录A}
+    \subsection{数学归纳法正确性的证明}
+    \footnote{本小节参考了百度百科和维基百科数学归纳法词条、皮亚诺公理词条、朱塞佩·皮亚诺词条}
+    实际上，数学归纳法一般被认为是自然数的一种公理。
+    \paragraph{皮亚诺公理（自然数公理）} 是意大利数学家朱塞佩·皮亚诺（$Giuseppe \ Peano$）提出的关于自然数的五条公理系统。根据这五条公理可以建立起\textbf{一阶算术系统}，也称皮亚诺算术系统。基本内容：
+    \begin{enumerate}
+        \item 0是自然数；
+        \item 每一个确定的自然数$a$，都有一个确定的后继数$a'$（$a' = a+1$），$a'$也是自然数;
+        \item 对于每一个自然数$b,c$，$b=c$当且仅当$b' = c'$;
+        \item 0不是任何自然数的后继数;
+        \item 任意关于自然数的命题，如果证明它对自然数$0$为真，且假定它对自然数$a$为真时，可以证明对$a'$也为真。那么，命题对所有自然数都为真。
+    \end{enumerate}
+    数学归纳法的正确性也可以在另一些公理的基础上予以证明。比如“最小自然数原理”（每个非空的正整数集合都有一个最小的元素）\\
+    假设定理$K(n)$完成了上述前两步骤，即证明了$n = 1$和$n = k$时$K$为真。假设存在不成立的自然数所构成的集合$S$，其中必定有一个最小的元素$i$，因为$1 \notin S$，那么$i > 1$\\
+    因为$i$是集合$S$中的最小元素，因此$i - 1 \notin S$，也就是说$K(i -1)$是成立的，那么$K(i)$也应该成立。这与假设出现了矛盾。\\
+    由此可证数学归纳法的正确性。
+    \subsection{排列与组合}
+    \subsubsection{结论“乘法原理是加法原理的推论”的证明}
+    设$a_1 , a_2 , a_3 , \cdots , a_p $是
+
+    \end{document}
