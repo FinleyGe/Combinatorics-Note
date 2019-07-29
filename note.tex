@@ -9,6 +9,9 @@
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
+
+\usepackage{tikz}
+
 \title{组合数学 笔记\\Combinatorics Note}
 \author{葛骏 Atlas}
 \date{\today}
@@ -107,9 +110,39 @@
     并且约定：$0! = 1$。
     因此，原公式可以写成如下漂亮的形式：
     \[P(n,r) = A_n^r = \frac{n!}{(n-r)!}\]
+    由此可知，$n$元素的排列数目为$n!$\\
+    上面讨论过的排列，更恰当的应该被称为\textbf{线性排列}($linear permutation$)，就像把对象排成一条线。考虑把对象排成一个圆，那么排列$\{1,2,3\}$就等价于$\{3,1,2\}$，排列的数目就会相应减少。(如图)
+    \begin{center}
+        \begin{tikzpicture}
+            \draw (0,2) node {1};
+            \draw(-1,0) node {2};
+            \draw(1,0) node {3};
+        \end{tikzpicture}
+    \end{center}
+    这种排列，我们称之为\textbf{循环排列}。
+   \subsubsection{循环排列公式}
+   $n$元素集合的循环$r$排列的数目是
+   \[\frac{A_n^r}{r} = \frac{n!}{r \cdot (n-r)!}\]
+   \footnote{证明过程详见附录A}
 
-   
-   
+   我们来看一下计数循环排列的另一种方法。假设要计算$A,B,C,D,E,F$的循环排列数目（想象要给他们在一张圆桌上安排座位），我们可以令其中一人(例如$A$)处在一个固定的位置（可以称之为“桌头”）。这样的话，上述的循环排列就相当于$B,C,D,E,F$的线性排列，即为$5!$。在讨论一些不能用上述公式解决的循环排列问题时，这种思路很有用。
+
+
+   \subsection{集合的组合（子集）}
+   设$S$是一个$n$元素集合。集合$S$的一个组合通常表示集合$S$的一个无序选择。实际上\textit{组合}和\textit{子集}在本质上是可以互换的。通常我们使用方便的\textit{子集}($subset$)而不是\textit{组合}($combination$)\footnote{汉语看起来差不多。}，除非要强调选择的过程。
+   我们用
+   \[(_r^n) = C_n^r = C(n,r) = _nC_r\]
+   表示$n$元素集合的$r$子集数目。\\
+   现在设$r$是一个非负整数。提到$n$元素集合的一个$r$组合，实际上是指$n$元素集合的一个$r$子集。
+   \subsubsection{集合的组合公式}对于$0 \leqslant r \leqslant n$，有
+   \[A_n^r =r!C_n^r \]
+   所以\[C_n^r = \frac{A_n^r}{r!} = \frac{n!}{r!(n-r)!}\]。
+   \subsubsection{集合组合公式的推论}对于$0 \leqslant r \leqslant n$，有
+   \[C_n^r = C_n^{(n-r)}\]
+   这一推论可以直接由公式导出（$r$带入$n-r$）。
+   \subsubsection{组合的性质一：帕斯卡公式}
+   对于所有满足$1 \leqslant k \leqslant n-1$的整数$n$和$k$，有
+   \[C_n^k = C\]
     \section{附录A}
     \subsection{数学归纳法正确性的证明}
     \footnote{本小节参考了百度百科和维基百科数学归纳法词条、皮亚诺公理词条、朱塞佩·皮亚诺词条}
@@ -132,12 +165,17 @@
     \[\mid S \mid = \mid S_1 \mid + \mid S_2 \mid + \cdots + \mid S_p \mid = q + q + \cdots + q (p \hbox{个}q ) = p \times q\]
     上述推倒过程中运用到了整数的乘法就是重复的加法这样的基本事实。
     \subsubsection{补集}
+
     \footnote{本小节参考了维基百科的“补集”词条}
     在集合论和数学的其他分支中，存在补集的两种定义：\textbf{相对补集}和\textbf{绝对补集}。\\
     \paragraph{相对补集}若$A$和$B$是集合，则$A$在$B$中的相对补集是所有属于$B$但不属于$A$的元素的集合。记为$B \backslash A$或者 $B - A$  或者 $\complement_B A$
     \paragraph{绝对补集}若给定全集$U$，则A的绝对补集是$A$在$U$中的相对补集，记为$A^C$或者$\complement_U A$
    \subsubsection{2.2.1排列公式的证明}
-   
+   在构建$n$元素集合的$r$排列时，我们可以用$n$种方法选择第一项，不论第一项如何选择，都可以用$n-1$种方法选择第二项，$\cdots$，不论前$r-1$项如何选出，都可以用$n-(r-1)$种方法选择第$r$项。根据乘法原理，这$r$项可以用$n \times (n-1) \times \cdots \times (n-r+1)$种方法选出。
+   \subsection{2.2.2循环排列公式的证明}
+   能够把线性$r$排列的集合划分成若干个部分，使得两个线性$r$排列对应于同一个循环$r$排列当且仅当这两个线性$r$排列在同一部分中。因此，循环$r$排列的数目就等于划分的部分的数目。由于每一个部分都含有$r$个线性$r$排列，因此部分数目是
+   \[\frac{A_n^r}{r} = \frac{n!}{r \cdot (n-r)!}\]
+
     \subsection{其他}
     \subsubsection{算术基本定理}
     \footnote{本小节参考了维基百科的“基本算术定理”词条}
