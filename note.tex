@@ -21,6 +21,7 @@
     \part*{前言}
     \paragraph{本文简介} 本文是葛骏研究学习组合数学的时候整理写出，以备自用。本文参考教材是机器工业出版社（$China \ Machine \  Press$）出版的，由美国威斯康星大学麦迪逊分校（$University \ of \ Wisconsin-Madison$）的理查德·A·布鲁尔迪教授($Richard \ A. \ Brualdi$)所著作，北京师范大学冯速等人翻译的《组合数学（第五版）》（$Introductory \ Combinatorics \ Fifth \ Edition$）。\\
     由于本文作者本人水平有限，故文中不免有纰漏、错误。（准确的说，会有很多！）而且想到本文是自用的，所以写作之时，常常心不在焉。倘若您读到本文纰漏之处，还望与我联系交流学习更正，谢谢。
+    \part*{}
     \section{什么是组合数学}
     \paragraph{组合数学所关心的问题} 就是把某个集合中的对象排列成某种模式，使其满足一定的规则。
     组合数学中反复出现两种通用的问题。
@@ -72,7 +73,43 @@
     \paragraph{乘法原理的第二种实用形式}如果一个任务有$p$种结果，而不论这项任务的结果，另一项任务都有$q$种结果，那么，这两项任务连续执行就有$p \times q$种结果。 
     \paragraph{乘法原理的推广}实际上乘法原理可以推广到任意有限多个集合的情形。\\
     在乘法原理中，对象$b$的$q$种选择可以随着$a$的选择而变化。唯一的要求是，选择的个数应是相同的$q$个，而不必是相同的选择。
+    \subsubsection{减法原理}令$A$是一个集合，$U$是包含$A$的一个更大的集合。设
+    \[ \overline{A} = U \backslash A = \complement_U A = \{x \in U \mid x \not \in A\}\]是$A$在$U$中的补。那么$A$中的对象数目由下列法则给出：
+    \[|A| = |U| - |\complement_U A|\]
+    \footnote{此处定义中，连等号的前三项是补集的三种表示方式，对补集的详细解释详见附录A}
+    \subsubsection{除法原理}
+    令$S$是一个有限集合，把它划分成$k$个部分，使得每一部分包含的对象数目相同，于是，此划分中的部分的数目又下列公式给出：
+    \[k = \frac{|S|}{\hbox{在一个部分中的对象数目}}\]
+    \subsubsection*{多重集合}在考虑下一小节的内容前，我们需要先了解\textbf{多重集合（$multiset$）}。多重集合中，除了其元素不必不同外，其余与集合别无二致。\\
+    因此，多重集合没有所谓“互异性”。我们要表示一个由一个1,两个2,两个3的多重集合时，应该写成$\{1\cdot 1, 2 \cdot 2 , 3 \cdot 2\}$
+    \footnote{多重集合也可以用集合（传统的集合）表示，如多重集合$\{1,2,2,3,3\}$用传统集合(点集)表示成$\{(1,1),(2,2),(3,2)\}$。}。其中各元素的计量数被称为\textbf{重复数}，重复数也可以是无穷大的。\\
+    我们再来讨论一些一般的想法。很多计数问题都可以归类为下面的类型之一：
+    \begin{enumerate}
+        \item 计数对象的\textbf{有序}排列的个数或对象的\textbf{有序}选择的个数 \begin{enumerate}
+            \item 任何对象都不能重复;
+            \item 允许对象重复（但可能是有限制的）。
+        \end{enumerate}
+        \item 计数对象的\textbf{无序}排列数目或者对象的\textbf{无序}选择个数\begin{enumerate}
+            \item 任何对象都不能重复
+            \item 允许对象重复（但可能是有限制的）。
+        \end{enumerate}
+    \end{enumerate}
+    有时候，不区分对象是否重复，而区分是从集合或者多重集合中进行选择也许会更方便。在(1)中的\textit{考虑到顺序}的放置或选择，我们称之为\textbf{排列}($permutation$);而(2)中\textit{与顺序无关}的放置或者选择，我们称之为\textbf{组合}($combination$)。
+    \subsection{集合的排列}
+    令$r$是正整数。说到一个$n$元素集合的$r$\textbf{排列}，我们理解为$n$个元素中的$r$个元素的\textbf{有序}放置。我们用$P(n,r)$\footnote{书上如是写。}（或者标准的$A_n^r$）表示$n$元素集合的$r$排列数目。
+    $n$元素集合$S$的$n$排列可以简单的说成\textit{$S$的排列}或者\textit{$n$个元素的排列}。
+    \subsubsection{集合的排列公式}
+    对于正整数$n$和$r,r \leq n$有
+    \[P(n,r) = A_n^r = n \times (n -1 ) \times (n-2) \times \cdots \times (n -r +1)\]
+    \footnote{该公式可用乘法原理证明，详见附录A}
+    \paragraph{阶乘} 对于非负整数$n$我们定义$n!$（读做$n$的阶乘）如下：
+    \[n! = n \times (n-1) \times (n-2) \times \cdots \times 2 \times 1\]
+    并且约定：$0! = 1$。
+    因此，原公式可以写成如下漂亮的形式：
+    \[P(n,r) = A_n^r = \frac{n!}{(n-r)!}\]
 
+   
+   
     \section{附录A}
     \subsection{数学归纳法正确性的证明}
     \footnote{本小节参考了百度百科和维基百科数学归纳法词条、皮亚诺公理词条、朱塞佩·皮亚诺词条}
@@ -94,8 +131,16 @@
     设$a_1 , a_2 , a_3 , \cdots , a_p $是对象$a$的$p$个不同选择。我们把$S$划分成部分$S_1,S_2,\cdots,S_p$,，其中$S_i$是$S$中第一个对象$a_i(i = 1,2,\cdot,p)$的有序对的集合。每个$S_i$的大小为$q$，根据加法原理有
     \[\mid S \mid = \mid S_1 \mid + \mid S_2 \mid + \cdots + \mid S_p \mid = q + q + \cdots + q (p \hbox{个}q ) = p \times q\]
     上述推倒过程中运用到了整数的乘法就是重复的加法这样的基本事实。
+    \subsubsection{补集}
+    \footnote{本小节参考了维基百科的“补集”词条}
+    在集合论和数学的其他分支中，存在补集的两种定义：\textbf{相对补集}和\textbf{绝对补集}。\\
+    \paragraph{相对补集}若$A$和$B$是集合，则$A$在$B$中的相对补集是所有属于$B$但不属于$A$的元素的集合。记为$B \backslash A$或者 $B - A$  或者 $\complement_B A$
+    \paragraph{绝对补集}若给定全集$U$，则A的绝对补集是$A$在$U$中的相对补集，记为$A^C$或者$\complement_U A$
+   \subsubsection{2.2.1排列公式的证明}
+   
     \subsection{其他}
     \subsubsection{算术基本定理}
+    \footnote{本小节参考了维基百科的“基本算术定理”词条}
     在计算例题：\\
     确定下面这个数\[3^4 \times 5^2 \times 11^7 \times 13^8\]的正整数因子的个数。\\
     时用到。
