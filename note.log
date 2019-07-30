@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.5.2)  29 JUL 2019 22:05
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.5.2)  30 JUL 2019 11:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1711,34 +1711,48 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \openout5 = `note.toc'.
 
 LaTeX Font Info:    Font shape `TU/FandolSong-Regular(0)/m/sl' in size <10.53937> not available
-(Font)              Font shape `TU/FandolSong-Regular(0)/m/it' tried instead on input line 33.
+(Font)              Font shape `TU/FandolSong-Regular(0)/m/it' tried instead on input line 32.
  [1]
 Underfull \hbox (badness 10000) in paragraph at lines 44--44
 [][][]\TU/FandolSong-Regular(0)/m/n/7.52812 在 本 文 的 教 科 书 中，|  作 者 默 认 读 者 掌 握 了 数 学 归 纳 法，|  因 此 我 查 阅 了  |《数 据 结 构 与 算 法 分 析  |— —| \TU/lmr/m/n/7.52812 C++ \TU/FandolSong-Regular(0)/m/n/7.52812 语 言 描 述  |（第 四
  []
 
 [2] [3] [4] [5]
-Underfull \hbox (badness 10000) in paragraph at lines 169--171
+
+LaTeX Font Warning: Font shape `TU/FandolSong-Regular(0)/bx/it' undefined
+(Font)              using `TU/FandolSong-Regular(0)/bx/n' instead on input line 146.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 145--147
 
  []
 
 [6]
+Underfull \hbox (badness 10000) in paragraph at lines 194--196
+
+ []
+
+[7]
 Missing character: There is no ， in font [lmroman10-regular]:mapping=tex-text;!
- [7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 188.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 188.
+ [8]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 213.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 213.
  (./note.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 188.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 188.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 188.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 213.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 213.
+
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 213.
  ) 
 Here is how much of TeX's memory you used:
- 38236 strings out of 493007
- 793915 string characters out of 6136720
- 786247 words of memory out of 5000000
- 41763 multiletter control sequences out of 15000+600000
- 539996 words of font info for 87 fonts, out of 8000000 for 9000
+ 38253 strings out of 493007
+ 794940 string characters out of 6136720
+ 786970 words of memory out of 5000000
+ 41778 multiletter control sequences out of 15000+600000
+ 540004 words of font info for 88 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  57i,8n,74p,10460b,492s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on note.pdf (8 pages).
+Output written on note.pdf (9 pages).
