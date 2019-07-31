@@ -1,42 +1,48 @@
-\contentsline {paragraph}{本文简介}{1}{paragraph*.3}
+\contentsline {paragraph}{本文简介}{2}{paragraph*.3}
 \contentsline {section}{\numberline {1}什么是组合数学}{2}{section.1}
 \contentsline {paragraph}{组合数学所关心的问题}{2}{paragraph*.5}
 \contentsline {paragraph}{组合数学}{2}{paragraph*.6}
 \contentsline {paragraph}{数学归纳法}{2}{paragraph*.7}
 \contentsline {paragraph}{组合数学解决问题的一般步骤}{2}{paragraph*.8}
-\contentsline {section}{\numberline {2}排列和组合}{2}{section.2}
-\contentsline {subsection}{\numberline {2.1}四个基本计数原理}{2}{subsection.2.1}
-\contentsline {paragraph}{划分}{2}{paragraph*.9}
+\contentsline {section}{\numberline {2}排列和组合}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}四个基本计数原理}{3}{subsection.2.1}
+\contentsline {paragraph}{划分}{3}{paragraph*.9}
 \contentsline {subsubsection}{\numberline {2.1.1}加法原理}{3}{subsubsection.2.1.1}
 \contentsline {subsubsection}{\numberline {2.1.2}乘法原理}{3}{subsubsection.2.1.2}
 \contentsline {paragraph}{乘法原理的第二种实用形式}{3}{paragraph*.10}
 \contentsline {paragraph}{乘法原理的推广}{3}{paragraph*.11}
-\contentsline {subsubsection}{\numberline {2.1.3}减法原理}{3}{subsubsection.2.1.3}
-\contentsline {subsubsection}{\numberline {2.1.4}除法原理}{3}{subsubsection.2.1.4}
+\contentsline {subsubsection}{\numberline {2.1.3}减法原理}{4}{subsubsection.2.1.3}
+\contentsline {subsubsection}{\numberline {2.1.4}除法原理}{4}{subsubsection.2.1.4}
 \contentsline {subsection}{\numberline {2.2}集合的排列}{4}{subsection.2.2}
-\contentsline {subsubsection}{\numberline {2.2.1}集合的排列公式}{4}{subsubsection.2.2.1}
-\contentsline {paragraph}{阶乘}{4}{paragraph*.13}
+\contentsline {subsubsection}{\numberline {2.2.1}集合的排列公式}{5}{subsubsection.2.2.1}
+\contentsline {paragraph}{阶乘}{5}{paragraph*.13}
 \contentsline {subsubsection}{\numberline {2.2.2}循环排列公式}{5}{subsubsection.2.2.2}
 \contentsline {subsection}{\numberline {2.3}集合的组合（子集）}{5}{subsection.2.3}
-\contentsline {subsubsection}{\numberline {2.3.1}集合的组合公式}{5}{subsubsection.2.3.1}
-\contentsline {subsubsection}{\numberline {2.3.2}集合组合公式的推论}{5}{subsubsection.2.3.2}
+\contentsline {subsubsection}{\numberline {2.3.1}集合的组合公式}{6}{subsubsection.2.3.1}
+\contentsline {subsubsection}{\numberline {2.3.2}集合组合公式的推论}{6}{subsubsection.2.3.2}
 \contentsline {subsubsection}{\numberline {2.3.3}组合的性质一：帕斯卡公式}{6}{subsubsection.2.3.3}
 \contentsline {paragraph}{组合推理证明}{6}{paragraph*.14}
-\contentsline {subsubsection}{\numberline {2.3.4}组合的性质二}{6}{subsubsection.2.3.4}
-\contentsline {subsection}{\numberline {2.4}多重集合的排列}{6}{subsection.2.4}
-\contentsline {subsubsection}{\numberline {2.4.1}无限重复数的多重集合排列}{6}{subsubsection.2.4.1}
-\contentsline {subsubsection}{\numberline {2.4.2}有限重复数的多重集合的排列}{6}{subsubsection.2.4.2}
-\contentsline {subsection}{\numberline {2.5}多重集合的组合}{7}{subsection.2.5}
-\contentsline {section}{\numberline {3}附录A}{7}{section.3}
-\contentsline {subsection}{\numberline {3.1}数学归纳法正确性的证明}{7}{subsection.3.1}
-\contentsline {paragraph}{皮亚诺公理（自然数公理）}{7}{paragraph*.15}
-\contentsline {subsection}{\numberline {3.2}排列与组合}{7}{subsection.3.2}
-\contentsline {subsubsection}{\numberline {3.2.1}结论“乘法原理是加法原理的推论”的证明}{7}{subsubsection.3.2.1}
-\contentsline {subsubsection}{\numberline {3.2.2}补集}{7}{subsubsection.3.2.2}
-\contentsline {paragraph}{相对补集}{8}{paragraph*.16}
-\contentsline {paragraph}{绝对补集}{8}{paragraph*.17}
-\contentsline {subsubsection}{\numberline {3.2.3}2.2.1排列公式的证明}{8}{subsubsection.3.2.3}
-\contentsline {subsection}{\numberline {3.3}2.2.2循环排列公式的证明}{8}{subsection.3.3}
-\contentsline {subsection}{\numberline {3.4}其他}{8}{subsection.3.4}
-\contentsline {subsubsection}{\numberline {3.4.1}算术基本定理}{8}{subsubsection.3.4.1}
-\contentsline {paragraph}{算术基本定理}{8}{paragraph*.18}
+\contentsline {subsubsection}{\numberline {2.3.4}组合的性质二}{7}{subsubsection.2.3.4}
+\contentsline {paragraph}{证明}{7}{paragraph*.15}
+\contentsline {subsection}{\numberline {2.4}多重集合的排列}{7}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}无限重复数的多重集合排列}{7}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}有限重复数的多重集合的排列}{7}{subsubsection.2.4.2}
+\contentsline {subsection}{\numberline {2.5}多重集合的组合}{8}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}有限概率}{8}{subsection.2.6}
+\contentsline {section}{\numberline {3}鸽巢原理}{8}{section.3}
+\contentsline {section}{\numberline {4}附录A}{8}{section.4}
+\contentsline {subsection}{\numberline {4.1}数学归纳法正确性的证明}{8}{subsection.4.1}
+\contentsline {paragraph}{皮亚诺公理（自然数公理）}{8}{paragraph*.16}
+\contentsline {subsection}{\numberline {4.2}排列与组合}{8}{subsection.4.2}
+\contentsline {subsubsection}{\numberline {4.2.1}结论“乘法原理是加法原理的推论”的证明}{8}{subsubsection.4.2.1}
+\contentsline {subsubsection}{\numberline {4.2.2}补集}{9}{subsubsection.4.2.2}
+\contentsline {paragraph}{相对补集}{9}{paragraph*.17}
+\contentsline {paragraph}{绝对补集}{9}{paragraph*.18}
+\contentsline {subsubsection}{\numberline {4.2.3}2.2.1排列公式的证明}{9}{subsubsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.4}2.2.2循环排列公式的证明}{9}{subsubsection.4.2.4}
+\contentsline {subsubsection}{\numberline {4.2.5}2.3.1 集合的组合公式的证明}{9}{subsubsection.4.2.5}
+\contentsline {subsubsection}{\numberline {4.2.6}2.4.1 无限重复数的多重集合的排列公式的证明}{9}{subsubsection.4.2.6}
+\contentsline {subsubsection}{\numberline {4.2.7}2.4.2 有限重复数的多重集合的排列公式证明}{10}{subsubsection.4.2.7}
+\contentsline {subsection}{\numberline {4.3}其他}{10}{subsection.4.3}
+\contentsline {subsubsection}{\numberline {4.3.1}算术基本定理}{10}{subsubsection.4.3.1}
+\contentsline {paragraph}{算术基本定理}{10}{paragraph*.19}
