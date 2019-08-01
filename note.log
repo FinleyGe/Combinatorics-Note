@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.5.2)  31 JUL 2019 22:48
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2019.5.2)  1 AUG 2019 08:40
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1735,21 +1735,21 @@ Underfull \hbox (badness 10000) in paragraph at lines 201--203
 [8] [9]
 Missing character: There is no ， in font [lmroman10-regular]:mapping=tex-text;!
  [10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 233.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 233.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 236.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 236.
  (./note.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 233.
-Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 233.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 236.
+Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 236.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 233.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 236.
  ) 
 Here is how much of TeX's memory you used:
  38253 strings out of 493007
  794940 string characters out of 6136720
- 787859 words of memory out of 5000000
+ 788859 words of memory out of 5000000
  41778 multiletter control sequences out of 15000+600000
  540004 words of font info for 88 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
