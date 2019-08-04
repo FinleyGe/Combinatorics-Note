@@ -243,8 +243,18 @@
      \[0 \leqslant x_1 \leqslant n_1 , 0 \leqslant x_2 \leqslant n_2,\cdots , 0 \leqslant x_k \leqslant n_k\]
      现在我们有诸$x_i$的上界，但它们的处理方法与下界的处理方法不同，我们将在了解\textit{容斥原理}后再解决这个问题。
    \subsection{有限概率}
-   有限概率的背景是这样的，有一个实验$\epsilon$，在进行这个实验时，它产生的结果是某有限结果集合中的一个。假设每一个结果都是\textbf{等可能的}($equally likely$)（即没有哪一个结果比其他结果更有可能出现。）这时我们说这个实验是\textbf{随机的}($randomly$)。所有可能结果的集合被称为这个实验的\textbf{样本空间}($sample space$)，并把它记作$S$
+   有限概率的背景是这样的，有一个实验$\epsilon$，在进行这个实验时，它产生的结果是某有限结果集合中的一个。假设每一个结果都是\textbf{等可能的}($equally likely$)（即没有哪一个结果比其他结果更有可能出现。）这时我们说这个实验是\textbf{随机的}($randomly$)。所有可能结果的集合被称为这个实验的\textbf{样本空间}($sample space$)，并把它记作$S$。因此，$S$是一个有限集合，比如说有下面$n$个元素的集合：
+   \[S = \{s_1 , s_2 , \cdots ,s_n\}\]
+   当我们进行实验$\epsilon$时，每有一个$s_i$都有$n$分之一的出现机会，所以说结果$s_i$的概率是$1/n$，写作
+   \[Prob(s_i) = 1/n (i = 1,2,\cdots,n)\]
+   一个\textbf{事件}（$event$） 就是样本空间的一个子集$E$，但是我们通常是用描述式的语言给出这个$E$。
+   \paragraph{概率} 在样本空间为$S$的实验中，事件$E$的\textbf{概率}($probability$)定义为$S$中属于$E$的结果的比率，因此，
+   \[Prob(E) = \frac{|E|}{|S|}\]
+   根据定义，事件$E$满足
+   \[ 0 \leqslant Prob(E) \leqslant 1\]
+   其中，当$Prob(E) = 0$当且仅当$E$是一个空事件$\varnothing$(即不可能事件)，而$Prob(E) =1$当且仅当$E$是整个样本空间$E$（即肯定出现的事件）。
    \section{鸽巢原理}
+   
    \section{附录A}
     \subsection{数学归纳法正确性的证明}
     \footnote{本小节参考了百度百科和维基百科数学归纳法词条、皮亚诺公理词条、朱塞佩·皮亚诺词条}
